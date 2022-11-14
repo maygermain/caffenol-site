@@ -1,0 +1,320 @@
+/*
+font-family: 'Roboto Slab', serif;
+font-family: 'Work Sans', sans-serif;
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  min-height: 100vh;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+/******************************/
+/*Typography*/
+h1 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: medium;
+}
+
+h3 {
+  font-family: 'Work Sans', sans-serif;
+}
+
+p {
+  font-family: 'Work Sans', sans-serif;
+}
+
+.sources p {
+  font-family: 'Work Sans', sans-serif;
+  font-style: italic;
+}
+
+/******************************/
+/*Content*/
+/*Header formatting*/
+header {
+  background: #121212;
+  padding: 0.5%;
+  padding-right: 5%;
+  padding-left: 7%;
+  /*Keep an eye on this padding for responsiveness!*/
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.header-logo {
+  display: flex;
+  grid-column: 1;
+  width: 50%;
+  max-width: 50px;
+  height: auto;
+  /*Keep an eye on this as we move into media queries; is it really responsive?*/
+}
+
+.header-nav {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+nav ul {
+  font-family: 'Work Sans', sans-serif;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  grid-column: 1 / span 2;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #d8d8d8;
+}
+
+nav ul li a:hover {
+  color: #F7B5A5;
+}
+
+.header-nav ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/*end header formatting*/
+
+/******************************/
+/*Main*/
+/*Homepage content*/
+.wrapper {
+  margin: 50px 100px 50px 100px;
+}
+
+.main-flex-parent {
+  display: flex;
+}
+
+.hero {
+  /*size*/
+  height: 60vh;
+  width: 100vw;
+  margin: 0;
+
+  /*centering text*/
+  display: flex;
+  justify-content: right;
+  align-items: flex-end;
+
+  /*image*/
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/hero banner bw.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.hero-text {
+  position: absolute;
+  padding: 5%;
+  color: white;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.home-text {
+  margin-bottom: 30px;
+}
+
+.button {
+  /* styling */
+  background-color: #121212;
+  border: none;
+  color: white;
+
+  /* text */
+  font-family: 'Work Sans', sans-serif;
+  text-align: center;
+  text-decoration: none;
+
+  /* sizing */
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 30px;
+}
+
+.button:hover {
+  background-color: #F7B5A5;
+  color: #121212;
+  transition: 0.3s;
+}
+
+.home-page {
+  color: #F7B5A5;
+}
+
+/*end homepage content*/
+
+/******************************/
+/*History content*/
+.history-page {
+  color: #F7B5A5;
+}
+
+/*Styling for ingredient lists, will carry over for recipes*/
+.ingredient-list {
+  font-family: 'Work Sans', sans-serif;
+  margin: 0;
+  margin-left: 20px;
+}
+
+/*Styling for sources at end of articles, should carry across all pages*/
+.source-block {
+  grid-column: 2;
+  margin: auto;
+}
+
+.source-block li {
+  list-style-type: none;
+  font-style: italic;
+}
+
+.source-block a {
+  color: #121212;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.source-block a:hover {
+  color: #F7B5A5;
+}
+
+/*end history content*/
+
+/******************************/
+/*Safety content*/
+.safety-page {
+  color: #F7B5A5;
+}
+
+/*end safety content*/
+
+/******************************/
+/*Supplies content*/
+.supplies-page {
+  color: #F7B5A5;
+}
+
+/*end supplies content*/
+
+/******************************/
+/*Recipe content*/
+.recipes-page {
+  color: #F7B5A5;
+}
+
+.back-to-top a {
+  display: flex;
+  font-family: 'Work Sans', sans-serif;
+  text-decoration: underline;
+  color: black;
+  justify-content: right;
+  /*Align text to right???*/
+}
+
+.back-to-top a:hover {
+  color: #F7B5A5;
+}
+
+.recipe-nav {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.recipe-nav ul li {
+  padding: 10px;
+}
+
+.recipe-nav ul li a {
+  color: #121212;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.recipe-nav ul li a:hover {
+  color: #F7B5A5;
+}
+
+ul li {
+  font-family: 'Work Sans', sans-serif;
+}
+
+/*end recipe content*/
+/*end main formatting*/
+
+/******************************/
+/*footer*/
+footer {
+  background: #121212;
+  padding: 50px;
+}
+
+.footer-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-nav ul {
+  text-align: center;
+}
+
+.footer-nav ul li {
+  padding: 10px;
+}
+
+/*end footer formatting*/
+
+/******************************/
+/*Media Queries*/
+@media screen and (max-width: 700px) {
+  header {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .header-logo {
+    max-width: 100px;
+    padding: 10px;
+    justify-items: center;
+  }
+
+  .header-nav ul {
+    display: block;
+    margin: auto;
+    padding: 10px;
+  }
+
+  .header-nav ul li {
+    padding: 10px;
+  }
+
+  .recipe-nav {
+    display: block;
+    text-align: left;
+  }
+}
