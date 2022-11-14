@@ -313,6 +313,10 @@ footer {
     padding: 10px;
   }
 
+  .wrapper {
+    margin: 25px 50px 25px 50px;
+  }
+
   .recipe-nav {
     display: block;
     text-align: left;
